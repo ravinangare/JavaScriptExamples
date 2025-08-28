@@ -1,0 +1,19 @@
+{
+  "name": "javascriptexamples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "smokeTest": "npx playwright test --grep @sanity",
+    "regressionTest": "npx playwright test --grep @regression",
+    "e2e": "npx playwright test",
+    "loginTest": "npx playwright test tests/LoginPageTest.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.1.0"
+  }
+}
